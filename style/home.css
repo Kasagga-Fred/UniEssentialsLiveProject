@@ -1,6 +1,6 @@
 .home-hero {
     height: 80vh;
-    background: url('/images/group-five-african.jpg') center/cover no-repeat;
+    background: url('images/group-five-african.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center; /* Centers horizontally */

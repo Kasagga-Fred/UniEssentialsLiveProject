@@ -16,7 +16,7 @@
 
 .about-hero {
     height: 80vh;
-    background: url('/images/colorful-paper-bags-placed-table.jpg') center/cover no-repeat; 
+    background: url('images/colorful-paper-bags-placed-table.jpg') center/cover no-repeat; 
     background-color: var(--color-blue); /* Fallback */
     position: relative;
     color: var(--color-white);
