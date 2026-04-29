@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Services | UniEssentials</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/products.css">
+</head>
+<body>
+    <!-- My announcement Offer -->
+    <div class="announcement">
+        <p class="announcement-text">FREE DELIVERY on all orders above <b>UGX 12,000</b> | Use code CAMPUS10 for <b>10%</b> off your first order</p>
+    </div>
+
+    <!-- NavBar Design Desktop -->
+    <nav class="desktop-navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart <span></span></a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+    <!-- Mobile Navigation -->
+    <div class="navbar-mobile">
+        <div class="navbar-mobile-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+        <!-- Mobile Toggle -->
+        <div class="toggle-mobile">
+            <h1 class="toggle-mobile-text">Menu</h1>
+        </div>
+        </div>
+    </div>
+    <!-- Mobile Links -->
+    <div class="mobile-wrapper">
+        <div class="mobile-links">
+        <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- Search Bar -->
+     <div class="search-wrapper">
+    <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search for pens, notebooks, or snacks...">
+</div>
+
+     <!-- New Arrivals -->
+ <section class="arrivals-section">
+    <div class="arrivals-container">
+        <div class="arrivals-header">
+            <h2 class="arrivals-headline">Professional Prints. Campus Prices</h2>
+            <p class="arrivals-subtext">From final year projects to emergency ID photos. Get high-quality printing without the "town" price tag</p>
+        </div>
+
+        <div class="arrivals-grid">
+<!-- Printing Services Grid -->
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Final Year Dissertation Hard Binding.png" alt="Hard Binding">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Final Year Dissertation Hard Binding</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 25,000</span>
+        </div>
+        <p class="arrival-desc">Official university standard gold-embossed hard binding. Includes 3 copies and a free digital scan of your signature page.</p>
+        <ul class="arrival-props">
+            <li>Gold/Silver embossing</li>
+            <li>Official faculty colors</li>
+            <li>24-hour turnaround</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Instant Passport Photos.png" alt="Passport Photos">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Instant Passport Photos (Set of 4)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 5,000</span>
+        </div>
+        <p class="arrival-desc">Need photos for your registration or internship application? High-resolution prints ready in just 10 minutes.</p>
+        <ul class="arrival-props">
+            <li>White/Blue background</li>
+            <li>Glossy finish paper</li>
+            <li>Digital copy included</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/B&W Coursework Printing ALL.png" alt="Black & White Printing">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">B&W Coursework Printing (Per Page)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 200</span>
+        </div>
+        <p class="arrival-desc">Bulk printing for your lecture handouts and assignments. High-speed laser printing that is crisp and professional.</p>
+        <ul class="arrival-props">
+            <li>Discount for 50+ pages</li>
+            <li>Standard 80gsm paper</li>
+            <li>Includes free stapling</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Standard Spiral Binding.png" alt="Spiral Binding">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Standard Spiral Binding (Up to 100pgs)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 3,500</span>
+        </div>
+        <p class="arrival-desc">Keep your handouts organized. Includes a transparent front cover and a heavy-duty card back for durability.</p>
+        <ul class="arrival-props">
+            <li>Flexible plastic coil</li>
+            <li>Transparent PVC cover</li>
+            <li>Wait-as-you-print service</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Student Business Cards.png" alt="Business Cards">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Student Business Cards (50 Pieces)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 15,000</span>
+        </div>
+        <p class="arrival-desc">Network like a pro at campus summits and career fairs. Customized with your name, course, and contact info.</p>
+        <ul class="arrival-props">
+            <li>Premium 300gsm card</li>
+            <li>Matte/Glossy finish</li>
+            <li>Free design template</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/B&W Coursework Printing ALL.png" alt="Color Printing">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Full Color Photo Printing (A4)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 2,500</span>
+        </div>
+        <p class="arrival-desc">Perfect for design students or medical diagrams. Vibrant, true-to-life colors that make your work stand out.</p>
+        <ul class="arrival-props">
+            <li>Inkjet high-quality</li>
+            <li>Glossy paper option</li>
+            <li>No bleeding on edges</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Customized University ID Lanyards.png" alt="Lanyards">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Customized University ID Lanyards</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 7,000</span>
+        </div>
+        <p class="arrival-desc">Don't lose your university ID. Durable branded lanyards available in various faculty colors with secure clips.</p>
+        <ul class="arrival-props">
+            <li>Soft polyester fabric</li>
+            <li>Detachable buckle</li>
+            <li>Faculty name printing</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Campus Event Flyers.png" alt="Event Flyers">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Campus Event Flyers (100 A5 Prints)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 45,000</span>
+        </div>
+        <p class="arrival-desc">Promoting a hostel bash or guild election? High-impact flyers that grab attention on every noticeboard.</p>
+        <ul class="arrival-props">
+            <li>Double-sided option</li>
+            <li>Bright, vivid colors</li>
+            <li>Fast 2-hour production</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/A4 Document Lamination.png" alt="Lamination">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">A4 Document Lamination</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 2,000</span>
+        </div>
+        <p class="arrival-desc">Protect your original documents (Birth Certs, UCE, UACE) from spills and wear. Heavy-duty 250-micron film.</p>
+        <ul class="arrival-props">
+            <li>Heat-sealed edges</li>
+            <li>Tear-proof protection</li>
+            <li>Crystal clear finish</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Wooden Certificate Wall Frame.png" alt="Frames">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Wooden Certificate Wall Frame</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 15,000</span>
+        </div>
+        <p class="arrival-desc">Show off your achievements. Elegant A4-sized frames perfect for certificates of merit or graduation photos.</p>
+        <ul class="arrival-props">
+            <li>Real wood/Glass front</li>
+            <li>Mounting hooks included</li>
+            <li>Sleek mahogany finish</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Branded Ceramic Coffee Mug.png" alt="Branded Mugs">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Branded Ceramic Coffee Mug</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 18,000</span>
+        </div>
+        <p class="arrival-desc">A perfect gift for a friend or a personal hostel cup. Printed with your favorite quote or faculty logo.</p>
+        <ul class="arrival-props">
+            <li>Heat-resistant print</li>
+            <li>Dishwasher safe</li>
+            <li>Full-wrap design</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Printing/Self-Inking Pocket Rubber Stamp.png" alt="Stamps">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Self-Inking Pocket Rubber Stamp</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 22,000</span>
+        </div>
+        <p class="arrival-desc">Essential for club leaders and student organizations. High-quality Trodat stamps for official documentation.</p>
+        <ul class="arrival-props">
+            <li>Built-in ink pad</li>
+            <li>Custom text/logo</li>
+            <li>Compact & portable</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Pagination -->
+ <div class="pagination-section">
+    <div class="pagination-container">
+        <!-- Previous -->
+        <a href="category/campus_wear.html" class="pagination-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </a>
+
+        <!-- Page Numbers -->
+        <a href="products.html" class="pagination-link">1</a>
+        <a href="category/flash_deals.html" class="pagination-link">2</a>
+        <a href="category/textbook_stationary.html" class="pagination-link">3</a>
+        <a href="category/tech_gadgets .html" class="pagination-link">4</a>
+        <a href="category/personal_care.html" class="pagination-link ">5</a>
+        <a href="category/campus_wear.html" class="pagination-link">6</a>
+        <a href="category/printing_services.html" class="pagination-link active">7</a>
+        <a href="category/room_essentials.html" class="pagination-link">8</a>
+        <a href="category/snacks_groceries.html" class="pagination-link">9</a>
+
+        <!-- Next -->
+        <a href="category/room_essentials.html" class="pagination-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+                <div class="footer-sections footer-section-1">
+                <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            </div>
+            <div class="footer-sections footer-section-2">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link footer-nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link footer-nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
+                    <li class="nav-link footer-nav-link"><a href="products.html" class="link">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                    <li class="nav-link footer-nav-link"><a href="register.html" class="link">Register</a></li>
+                    <li class="nav-link footer-nav-link"><a href="login.html" class="link">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">News Letter</h3>
+                <center>
+                    <form action="" class="newsletter-form">
+                    <input type="email" required placeholder="kasaggafred@gmail.com" class="newsletter">
+                    <button type="submit" class="nav-button-link unfilled buttons-design">Subscribe to our News Letter</button>
+                </form>
+                </center>
+
+            </div>
+        </div>
+        <p class="footer-tagline">&copy; <span id="year"></span> UniEssentials</p>
+    </footer>
+
+
+
+
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

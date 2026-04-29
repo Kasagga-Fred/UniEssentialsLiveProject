@@ -1,0 +1,114 @@
+.details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* IMAGE */
+#d-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: var(--color-white);
+    padding: 10px;
+}
+
+/* PRODUCT NAME */
+#d-name {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+/* PRICE */
+#d-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-green);
+}
+
+/* DESCRIPTION */
+#d-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--shadow-grey-dark);
+}
+
+/* FEATURES TITLE */
+.details-container h3 {
+    color: var(--color-black);
+    margin-top: 10px;
+}
+
+/* FEATURES LIST */
+#d-features {
+    padding-left: 20px;
+}
+
+#d-features li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--shadow-grey-dark);
+    position: relative;
+}
+
+/* Optional bullet style */
+#d-features li::marker {
+    color: var(--color-orange);
+}
+
+@media (max-width: 768px) {
+    .details-container {
+        grid-template-columns: 1fr;
+    }
+
+    .details-container > * {
+        grid-column: auto;
+    }
+}
+
+.details-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+    width: 240px;
+}
+
+
+/* OUTLINE BUTTON */
+.btn-outline {
+    width: 240px;
+    background: transparent;
+    color: var(--color-orange);
+    border: 2px solid var(--color-orange);
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-outline:hover {
+    background: var(--color-orange);
+    color: var(--color-white);
+}

@@ -1,0 +1,637 @@
+.home-hero {
+    height: 80vh;
+    background: url('/images/group-five-african.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers horizontally */
+}
+
+.home-hero-overlay {
+    background: rgba(44, 62, 122, 0.45);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: center; /* Centers container horizontally */
+}
+
+.home-hero-content {
+    max-width: 750px; /* Slightly wider for better centering */
+    color: #ffffff;
+    text-align: center; /* Centers text inside the block */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers buttons and badges horizontally */
+    margin: 0 auto;
+}
+
+.home-hero-title {
+    font-size: clamp(2.5rem, 6vw, 3.8rem);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.1;
+}
+
+.home-hero-sub {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+/* Centered Button Layout */
+.home-hero-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    justify-content: center; /* Centers the button row */
+}
+
+.home-hero-btn {
+    flex: 1; 
+    max-width: 220px;
+    height: 54px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.home-btn-fill {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border: none;
+}
+
+.home-btn-outline {
+    background: transparent;
+    border: 2px solid var(--color-orange);
+    color: var(--color-orange);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.home-btn-outline:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+/* Centered Trust Signals */
+.home-trust-signals {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the badges */
+}
+
+.home-trust-badge {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .home-hero { height: 70vh; }
+    .home-hero-actions { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .home-hero-btn { width: 100%; 
+        max-width: 280px; }
+}
+
+
+/* Categories */
+.home-categories {
+    padding: 40px 0;
+    background-color: var(--color-white);
+    margin-top: 40px;
+}
+
+.home-container-small {
+    max-width: 1024px;
+    margin: 0 auto;    /* Centers the container */
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.home-category-wrapper {
+    display: flex;
+    justify-content: space-between; /* Spreads items evenly in the 1024px space */
+    gap: 10px;
+    overflow-x: auto; 
+    padding-bottom: 5px;
+    scrollbar-width: none;
+    padding-top: 30px;
+}
+
+.home-category-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.home-cat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    min-width: 110px; /* Prevents text wrapping too early */
+    transition: transform 0.2s ease;
+}
+
+.home-cat-item:hover {
+    transform: translateY(-3px);
+}
+
+.home-cat-icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #E3F2FD; /* Light Blue */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    color: var(--color-blue);
+    transition: all 0.3s ease;
+}
+
+.home-cat-item:hover .home-cat-icon-circle {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+}
+
+.home-cat-icon-circle svg {
+    width: 24px;
+    height: 24px;
+}
+
+.home-cat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--color-black);
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Specific styling for Flash Deals */
+.home-cat-flash {
+    color: var(--color-red);
+}
+.home-cat-item:hover .home-cat-flash {
+    background-color: var(--color-red);
+}
+
+@media (max-width: 1024px) {
+    .home-category-wrapper {
+        justify-content: flex-start; /* Switch to scroll on smaller screens */
+        gap: 20px;
+    }
+}
+
+/* Top Product */
+.top-product-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--color-white);
+}
+
+.top-product-card {
+    background-color: var(--card);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    border: 1px solid var(--shadow-grey-light);
+    box-shadow: 0 4px 15px var(--shadow-grey-light);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.top-product-label {
+    display: block;
+    color: var(--color-blue);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.top-product-image {
+    width: 100%;
+    height: 180px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-product-image img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.top-product-name {
+    font-size: 1.25rem;
+    color: var(--color-black);
+    margin: 0 0 10px 0;
+}
+
+.top-product-pricing {
+    margin-bottom: 10px;
+}
+
+.top-price-old {
+    color: var(--shadow-grey-dark);
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+
+.top-price-new {
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.top-product-desc {
+    font-size: 0.85rem;
+    color: var(--shadow-grey-dark);
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.top-product-props {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.top-product-props li {
+    font-size: 0.8rem;
+    color: var(--color-black);
+    margin-bottom: 5px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.top-product-props li::before {
+    content: "✓";
+    color: var(--color-green);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.top-product-social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    color: var(--shadow-grey-dark);
+    margin-bottom: 20px;
+}
+
+.top-product-social svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Button Layout */
+.top-product-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.top-product-actions button {
+    flex: 1; /* Equal width */
+    height: 44px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.top-btn-filled {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.top-btn-filled:hover {
+    opacity: 0.9;
+}
+
+.top-btn-outline {
+    background: transparent;
+    border-color: var(--color-orange) !important;
+    color: var(--color-orange);
+}
+
+.top-btn-outline:hover {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .top-product-actions {
+        flex-direction: column;
+    }
+}
+
+
+/* New Arrivals General Purpose Card*/
+.arrivals-section {
+    padding: 60px 20px;
+    background-color: var(--color-white);
+}
+
+.arrivals-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.arrivals-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.arrivals-headline {
+    color: var(--color-black);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.arrivals-subtext {
+    color: var(--shadow-grey-dark);
+    font-size: 1rem;
+}
+
+/* 4-column desktop, 2-column mobile */
+.arrivals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.arrival-card {
+    background-color: var(--card);
+    border-radius: 12px;
+    border: 1px solid var(--shadow-grey-light);
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrival-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-green);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.arrival-image {
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrival-image img {
+    max-height: 85%;
+    max-width: 85%;
+    object-fit: contain;
+}
+
+.arrival-name {
+    font-size: 1.1rem;
+    color: var(--color-black);
+    margin: 0 0 8px 0;
+    min-height: 2.6rem; /* Keeps cards aligned if names are different lengths */
+}
+
+.arrival-price {
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.arrival-desc {
+    font-size: 0.8rem;
+    color: var(--shadow-grey-dark);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    height: 3.2rem; /* Limits to approx 15 words height */
+    overflow: hidden;
+}
+
+.arrival-props {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 0.75rem;
+}
+
+.arrival-props li {
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.arrival-props li::before {
+    content: "•";
+    color: var(--color-blue);
+    position: absolute;
+    left: 0;
+}
+
+.arrival-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto; /* Pushes buttons to the bottom */
+}
+
+.arrival-actions button {
+    flex: 1;
+    height: 38px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.arrival-btn-filled {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.arrival-btn-filled:hover { opacity: 0.9; }
+
+.arrival-btn-outline {
+    background: transparent;
+    border-color: var(--color-orange) !important;
+    color: var(--color-orange);
+}
+
+.arrival-btn-outline:hover {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+.arrivals-footer {
+    text-align: center;
+}
+
+.arrivals-view-all {
+    background: transparent;
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arrivals-view-all:hover {
+    background: var(--color-blue);
+    color: white;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .arrivals-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .arrivals-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+}
+
+@media (max-width: 480px) {
+    .arrival-actions { flex-direction: column; }
+}
+
+
+/* Testimonials */
+.home-testimonials {
+    padding: 80px 0;
+    background-color: var(--card);
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home-test-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home-avg-rating {
+    margin-top: 15px;
+}
+
+.home-stars-row {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.home-star-svg {
+    width: 28px;
+    height: 28px;
+    fill: #ddd; /* Default empty */
+}
+
+.home-star-svg.filled { fill: var(--color-orange); }
+.home-star-svg.half { fill: var(--color-orange); }
+
+/* Grid Layout */
+.home-test-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.home-test-card {
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-grey-light);
+    border: 1px solid #eee;
+}
+
+.home-test-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.home-user-img {
+    width: 60px;
+    height: 60px;
+    background: var(--shadow-grey-light);
+    border-radius: 50%;
+}
+
+.home-user-meta h4 {
+    margin: 0;
+    color: var(--color-black);
+    font-size: 1.1rem;
+}
+
+.home-user-meta span {
+    color: var(--shadow-grey-dark);
+    font-size: 0.85rem;
+}
+
+.home-card-stars {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+
+.home-star-small {
+    width: 18px;
+    height: 18px;
+    fill: var(--color-orange);
+}
+
+.home-test-text {
+    font-style: italic;
+    color: var(--color-black);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .home-test-grid { grid-template-columns: 1fr; }
+}

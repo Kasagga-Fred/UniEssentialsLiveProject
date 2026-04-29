@@ -1,0 +1,288 @@
+/* New Arrivals General Purpose Card*/
+.arrivals-section {
+    padding: 60px 20px;
+    background-color: var(--color-white);
+}
+
+.arrivals-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.arrivals-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.arrivals-headline {
+    color: var(--color-black);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.arrivals-subtext {
+    color: var(--shadow-grey-dark);
+    font-size: 1rem;
+}
+
+/* 4-column desktop, 2-column mobile */
+.arrivals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.arrival-card {
+    background-color: var(--card);
+    border-radius: 12px;
+    border: 1px solid var(--shadow-grey-light);
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.arrival-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-green);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.arrival-image {
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrival-image img {
+    max-height: 85%;
+    max-width: 85%;
+    object-fit: contain;
+}
+
+.arrival-name {
+    font-size: 1.1rem;
+    color: var(--color-black);
+    margin: 0 0 8px 0;
+    min-height: 2.6rem; /* Keeps cards aligned if names are different lengths */
+}
+
+.arrival-price {
+    color: var(--color-red);
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.arrival-desc {
+    font-size: 0.8rem;
+    color: var(--shadow-grey-dark);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    height: 3.2rem; /* Limits to approx 15 words height */
+    overflow: hidden;
+}
+
+.arrival-props {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 0.75rem;
+}
+
+.arrival-props li {
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 4px;
+}
+
+.arrival-props li::before {
+    content: "•";
+    color: var(--color-blue);
+    position: absolute;
+    left: 0;
+}
+
+.arrival-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto; /* Pushes buttons to the bottom */
+}
+
+.arrival-actions button {
+    flex: 1;
+    height: 38px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.arrival-btn-filled {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+.arrival-btn-filled:hover { opacity: 0.9; }
+
+.arrival-btn-outline {
+    background: transparent;
+    border-color: var(--color-orange) !important;
+    color: var(--color-orange);
+}
+
+.arrival-btn-outline:hover {
+    background-color: var(--color-orange);
+    color: white;
+}
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .arrivals-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .arrivals-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+}
+
+@media (max-width: 480px) {
+    .arrival-actions { flex-direction: column; }
+}
+
+/* Search Bar Styles */
+/* Container to help with centering if needed */
+.search-wrapper {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#searchInput {
+    width: 100%;
+    height: 50px;
+    padding: 12px 20px 12px 45px; /* Extra left padding for the icon */
+    font-size: 1rem;
+    border: 2px solid var(--shadow-grey-light);
+    border-radius: 25px; 
+    background-color: var(--color-white);
+    color: var(--color-black);
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    
+    /* Search Icon SVG Background */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://w3.org' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+}
+
+#searchInput:focus {
+    border-color: var(--color-blue);
+    box-shadow: 0 4px 12px rgba(0, 0, 255, 0.1);
+}
+
+#searchInput::placeholder {
+    color: var(--shadow-grey-dark);
+    opacity: 0.8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #searchInput {
+        height: 45px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Pagination Styles */
+.pagination-section {
+    width: 100%;
+    margin: 40px 0;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.pagination-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents breaking into new lines */
+    align-items: center;
+    gap: 6px; /* Tight gap for 9 items */
+}
+
+.pagination-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--shadow-grey-light);
+    border-radius: 6px;
+    background: var(--color-white);
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.pagination-link svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--shadow-grey-dark);
+}
+
+.pagination-link:hover {
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+}
+
+/* Active State using Orange */
+.pagination-link.active {
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
+    color: var(--color-white);
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 600px) {
+    .pagination-container {
+        gap: 4px;
+    }
+    
+    .pagination-link {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    /* Hide middle pages on small phones to keep it linear */
+    .pagination-link:nth-child(5),
+    .pagination-link:nth-child(6),
+    .pagination-link:nth-child(7) {
+        display: none;
+    }
+}

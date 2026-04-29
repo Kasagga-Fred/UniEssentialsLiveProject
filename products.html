@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | UniEssentials</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/products.css">
+</head>
+<body>
+    <!-- My announcement Offer -->
+    <div class="announcement">
+        <p class="announcement-text">FREE DELIVERY on all orders above <b>UGX 12,000</b> | Use code CAMPUS10 for <b>10%</b> off your first order</p>
+    </div>
+
+    <!-- NavBar Design Desktop -->
+    <nav class="desktop-navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart <span></span></a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+    <!-- Mobile Navigation -->
+    <div class="navbar-mobile">
+        <div class="navbar-mobile-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+        <!-- Mobile Toggle -->
+        <div class="toggle-mobile">
+            <h1 class="toggle-mobile-text">Menu</h1>
+        </div>
+        </div>
+    </div>
+    <!-- Mobile Links -->
+    <div class="mobile-wrapper">
+        <div class="mobile-links">
+        <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- Search Bar -->
+     <div class="search-wrapper">
+    <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search for pens, notebooks, or snacks...">
+</div>
+
+     <!-- New Arrivals -->
+ <section class="arrivals-section">
+    <div class="arrivals-container">
+        <div class="arrivals-header">
+            <h2 class="arrivals-headline">Just Dropped — New Arrivals This Week</h2>
+            <p class="arrivals-subtext">Fresh stock added every week. Be the first on your floor to get these.</p>
+        </div>
+
+        <div class="arrivals-grid">
+            <!-- Card 1 -->
+            <div class="arrival-card">
+                <div class="arrival-image">
+                    <img src="images/index/BIC 4-Colour Ballpoint Pen Set.jpg" alt="BIC Pen Set">
+                </div>
+                <div class="arrival-info">
+                    <h3 class="arrival-name">BIC 4-Colour Ballpoint Pen Set</h3>
+                    <div class="arrival-pricing">
+                        <span class="arrival-price">UGX 15,000</span>
+                    </div>
+                    <p class="arrival-desc">Classic multi-color pens perfect for organizing lecture notes and color-coding your study guides.</p>
+                    <ul class="arrival-props">
+                        <li>Long-lasting ink</li>
+                        <li>Retractable design</li>
+                        <li>4 colors in 1 pen</li>
+                    </ul>
+                    <div class="arrival-actions">
+                        <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+                        <button class="arrival-btn-outline" onclick="openDetails(1)">Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="arrival-card">
+                <div class="arrival-image">
+                    <img src="images/index/HP Wireless Keyboard.png" alt="HP Keyboard">
+                </div>
+                <div class="arrival-info">
+                    <h3 class="arrival-name">HP Wireless Keyboard</h3>
+                    <div class="arrival-pricing">
+                        <span class="arrival-price">UGX 95,000</span>
+                    </div>
+                    <p class="arrival-desc">Sleek, silent-touch wireless keyboard designed for comfortable typing during long essay writing sessions.</p>
+                    <ul class="arrival-props">
+                        <li>2.4GHz Wireless</li>
+                        <li>Long battery life</li>
+                        <li>Spill-resistant</li>
+                    </ul>
+                    <div class="arrival-actions">
+                        <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+                        <button class="arrival-btn-outline" onclick="openDetails(2)">Details</button>
+                    </div>
+                </div>
+            </div>
+
+           <!-- Card 3 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/index/Instant Noodles Variety Pack.png" alt="Indomie Variety Pack">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Instant Noodles Variety Pack (12-Pack)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 22,000</span>
+        </div>
+        <p class="arrival-desc">The ultimate survival kit for late-night study sessions. Includes a mix of Chicken and Onion flavors.</p>
+        <ul class="arrival-props">
+            <li>Ready in 3 minutes</li>
+            <li>Energy-boosting meal</li>
+            <li>Budget-friendly choice</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(3)">Details</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Card 4 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/index/LED Folding Rechargeable Study Lamp.png" alt="Folding Study Lamp">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">LED Folding Rechargeable Study Lamp</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 45,000</span>
+        </div>
+        <p class="arrival-desc">Bright LED light with adjustable brightness levels. Perfect for reading without disturbing your roommate.</p>
+        <ul class="arrival-props">
+            <li>Rechargeable battery</li>
+            <li>Eye-protection LED</li>
+            <li>Compact & portable</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(4)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Academic & Stationery -->
+
+<!-- Card 5 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/A5 Hardcover Systematic Notebook.png" alt="A5 Notebook">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">A5 Hardcover Systematic Notebook</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 8,500</span>
+        </div>
+        <p class="arrival-desc">Durable hardcover notebook with 200 ruled pages. Ideal for taking organized notes during long lectures.</p>
+        <ul class="arrival-props">
+            <li>Premium 80gsm paper</li>
+            <li>Sturdy binding</li>
+            <li>Elastic closure strap</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(5)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Casio fx-82MS Scientific Calculator.png" alt="Casio Calculator">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Casio fx-82MS Scientific Calculator</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 45,000</span>
+        </div>
+        <p class="arrival-desc">Essential for CS and Engineering students. Handles complex equations and statistical calculations with ease.</p>
+        <ul class="arrival-props">
+            <li>240 integrated functions</li>
+            <li>High-resolution display</li>
+            <li>Slide-on hard case</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(6)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Tech Accessories -->
+
+<!-- Card 7 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Oraimo 10,000mAh Compact Power Bank.png" alt="Power Bank">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Oraimo 10,000mAh Compact Power Bank</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 55,000</span>
+        </div>
+        <p class="arrival-desc">Never run out of juice during a blackout. Portable and fast-charging for all your mobile devices.</p>
+        <ul class="arrival-props">
+            <li>Dual USB output</li>
+            <li>Ultra-slim design</li>
+            <li>2.1A Fast charging</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(7)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Card 8 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/SanDisk 64GB USB 3.0 Flash Drive.png" alt="USB Flash">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">SanDisk 64GB USB 3.0 Flash Drive</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 35,000</span>
+        </div>
+        <p class="arrival-desc">Fast file transfers for your assignments and movies. Rugged design to survive campus life.</p>
+        <ul class="arrival-props">
+            <li>High-speed USB 3.0</li>
+            <li>Secure access software</li>
+            <li>Metal keyring loop</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(8)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Snacks & Groceries -->
+
+<!-- Card 9 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Nido Fortified Milk Powder.png" alt="Nido Milk">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Nido Fortified Milk Powder (400g)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 24,000</span>
+        </div>
+        <p class="arrival-desc">Your daily dose of nutrition. Perfect for cereal, tea, or a quick morning drink before an 8AM class.</p>
+        <ul class="arrival-props">
+            <li>Rich in Vitamin C & D</li>
+            <li>Instant dissolution</li>
+            <li>Resealable tin</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(9)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Card 10 -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/McVitie's Digestive Biscuits.png" alt="Digestive Biscuits">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">McVitie's Digestive Biscuits (Twin Pack)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 12,500</span>
+        </div>
+        <p class="arrival-desc">The perfect companion for your evening tea. High-fiber snacks to keep you going during group work.</p>
+        <ul class="arrival-props">
+            <li>Wheat flour goodness</li>
+            <li>No artificial colors</li>
+            <li>Value pack pricing</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(10)">Details</button>
+        </div>
+    </div>
+</div>
+
+<!-- Products -->
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/1.8L Stainless Steel Electric Kettle.png" alt="Electric Kettle">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">1.8L Stainless Steel Electric Kettle</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 38,000</span>
+        </div>
+        <p class="arrival-desc">Boil water in minutes for coffee or tea. A must-have appliance for every hostel room.</p>
+        <ul class="arrival-props">
+            <li>Automatic shut-off</li>
+            <li>Boil-dry protection</li>
+            <li>360-degree swivel base</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(11)">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Cotton 4x6 Bedding Set (3 Pieces).png" alt="Bedsheets">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Cotton 4x6 Bedding Set (3 Pieces)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 42,000</span>
+        </div>
+        <p class="arrival-desc">Soft and breathable cotton sheets. Includes 1 flat sheet and 2 pillowcases for a comfortable sleep.</p>
+        <ul class="arrival-props">
+            <li>100% Cotton material</li>
+            <li>Fade-resistant colors</li>
+            <li>Standard 4x6 hostel fit</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)" >Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(12)">Details</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Axe Dark Temptation Body Spray.png" alt="Body Spray">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Axe Dark Temptation Body Spray</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 18,500</span>
+        </div>
+        <p class="arrival-desc">Stay fresh all day. Subtle chocolate fragrance that keeps you smelling great from class to the library.</p>
+        <ul class="arrival-props">
+            <li>48-hour freshness</li>
+            <li>Sleek 150ml can</li>
+            <li>Odor-protection formula</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(13)">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Colgate Triple Action Toothpaste (140g).png" alt="Colgate">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Colgate Triple Action Toothpaste (140g)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 6,500</span>
+        </div>
+        <p class="arrival-desc">Cavity protection, whiter teeth, and fresh breath. Don't walk to the road just for toothpaste.</p>
+        <ul class="arrival-props">
+            <li>Fluoride protection</li>
+            <li>Minty fresh flavor</li>
+            <li>Value size tube</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(14)">Details</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Omo Hand Wash Detergent (500g).png" alt="Omo">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Omo Hand Wash Detergent (500g)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 7,000</span>
+        </div>
+        <p class="arrival-desc">Powerful stain removal for your laundry days. Gentle on your hands but tough on dirt.</p>
+        <ul class="arrival-props">
+            <li>Deep cleaning action</li>
+            <li>Fresh scent</li>
+            <li>Sudsing formula</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(15)">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Products/Plastic Mesh Shower Caddy.png" alt="Shower Caddy">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Plastic Mesh Shower Caddy / Basin</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 12,000</span>
+        </div>
+        <p class="arrival-desc">Organize your toiletries for the shared hostel bathrooms. Lightweight and easy to dry.</p>
+        <ul class="arrival-props">
+            <li>Drainage holes included</li>
+            <li>Sturdy handle</li>
+            <li>Fits all essentials</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline" onclick="openDetails(16)">Details</button>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Pagination -->
+ <div class="pagination-section">
+    <div class="pagination-container">
+        <!-- Previous -->
+        <a href="#" class="pagination-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </a>
+
+        <!-- Page Numbers -->
+        <a href="products.html" class="pagination-link active">1</a>
+        <a href="category/flash_deals.html" class="pagination-link">2</a>
+        <a href="category/textbook_stationary.html" class="pagination-link">3</a>
+        <a href="category/tech_gadgets .html" class="pagination-link">4</a>
+        <a href="category/personal_care.html" class="pagination-link">5</a>
+        <a href="category/campus_wear.html" class="pagination-link">6</a>
+        <a href="category/printing_services.html" class="pagination-link">7</a>
+        <a href="category/room_essentials.html" class="pagination-link">8</a>
+        <a href="category/snacks_groceries.html" class="pagination-link">9</a>
+
+        <!-- Next -->
+        <a href="category/flash_deals.html" class="pagination-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+                <div class="footer-sections footer-section-1">
+                <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            </div>
+            <div class="footer-sections footer-section-2">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link footer-nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link footer-nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
+                    <li class="nav-link footer-nav-link"><a href="products.html" class="link">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                    <li class="nav-link footer-nav-link"><a href="register.html" class="link">Register</a></li>
+                    <li class="nav-link footer-nav-link"><a href="login.html" class="link">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">News Letter</h3>
+                <center>
+                    <form action="" class="newsletter-form">
+                    <input type="email" required placeholder="kasaggafred@gmail.com" class="newsletter">
+                    <button type="submit" class="nav-button-link unfilled buttons-design">Subscribe to our News Letter</button>
+                </form>
+                </center>
+
+            </div>
+        </div>
+        <p class="footer-tagline">&copy; <span id="year"></span> UniEssentials</p>
+    </footer>
+
+
+
+
+    
+    <script src="scripts/scripts.js"></script>
+
+    <script src="scripts/products.js"></script>
+    <script src="scripts/details_logic.js"></script>
+</body>
+</html>

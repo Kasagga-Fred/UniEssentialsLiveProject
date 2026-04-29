@@ -1,0 +1,117 @@
+.contact-main {
+    background-color: var(--color-white);
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-headline {
+    color: var(--color-black);
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+}
+
+.contact-subtext {
+    color: var(--shadow-grey-dark);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+}
+
+/* Card Styling */
+.contact-card {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid var(--shadow-grey-light);
+}
+
+.contact-field {
+    margin-bottom: 20px;
+}
+
+.contact-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.contact-field input, .contact-field textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--shadow-grey-light);
+    border-radius: 6px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.contact-field input:focus, .contact-field textarea:focus {
+    border-color: var(--color-blue);
+}
+
+.contact-btn {
+    width: 100%;
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover { background-color: #0000CC; }
+
+/* Info Column & SVGs */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.contact-icon-box {
+    width: 48px;
+    height: 48px;
+    background: #e3f2fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: var(--color-blue);
+    flex-shrink: 0;
+}
+
+.contact-icon-box svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-item h4 { margin: 0; color: var(--color-black); }
+.contact-item p { margin: 4px 0 0 0; color: var(--shadow-grey-dark); font-size: 0.9rem; }
+
+.contact-map-wrapper {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .contact-layout { grid-template-columns: 1fr; }
+    .contact-card { padding: 25px; }
+}

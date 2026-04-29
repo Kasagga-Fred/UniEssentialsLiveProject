@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textbooks & Stationery | UniEssentials</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/products.css">
+</head>
+<body>
+    <!-- My announcement Offer -->
+    <div class="announcement">
+        <p class="announcement-text">FREE DELIVERY on all orders above <b>UGX 12,000</b> | Use code CAMPUS10 for <b>10%</b> off your first order</p>
+    </div>
+
+    <!-- NavBar Design Desktop -->
+    <nav class="desktop-navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart <span></span></a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+    </nav>
+    <!-- Mobile Navigation -->
+    <div class="navbar-mobile">
+        <div class="navbar-mobile-container">
+            <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+        <!-- Mobile Toggle -->
+        <div class="toggle-mobile">
+            <h1 class="toggle-mobile-text">Menu</h1>
+        </div>
+        </div>
+    </div>
+    <!-- Mobile Links -->
+    <div class="mobile-wrapper">
+        <div class="mobile-links">
+        <div class="navbar-links">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
+                    <li class="nav-link"><a href="products.html" class="link">Products</a></li>
+                    <li class="nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="cta-buttons">
+                <ul class="nav-button-links">
+                    <li class="nav-button-link filled"><a href="register.html" class="button-link">Register</a></li>
+                    <li class="nav-button-link unfilled"><a href="login.html" class="button-link">Login</a></li>
+                </ul>
+            </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <!-- Search Bar -->
+     <div class="search-wrapper">
+    <input type="text" id="searchInput" onkeyup="searchProduct()" placeholder="Search for pens, notebooks, or snacks...">
+</div>
+
+     <!-- New Arrivals -->
+ <section class="arrivals-section">
+    <div class="arrivals-container">
+        <div class="arrivals-header">
+            <h2 class="arrivals-headline">Textbooks & Stationery</h2>
+            <p class="arrivals-subtext">Don't be the one asking to borrow a pen. Get your own premium stationery delivered to your hostel today.</p>
+        </div>
+
+        <div class="arrivals-grid">
+<!-- Textbooks & Stationery Grid -->
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Introduction to Computing.png" alt="Computing Textbook">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Introduction to Computing (Paperback)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 35,000</span>
+        </div>
+        <p class="arrival-desc">Essential for all First Year CS students. Covers hardware, software, and basic networking concepts used in Nkumba labs.</p>
+        <ul class="arrival-props">
+            <li>Updated 2023 Edition</li>
+            <li>Simple language</li>
+            <li>Sample exam questions</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Pure Mathematics for Engineers.png" alt="Math Textbook">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Pure Mathematics for Engineers Vol. 1</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 45,000</span>
+        </div>
+        <p class="arrival-desc">Master calculus and algebra. A must-have for ICT and Engineering students tackling Semester 2 math modules.</p>
+        <ul class="arrival-props">
+            <li>Step-by-step solutions</li>
+            <li>Ugandan syllabus aligned</li>
+            <li>Durable binding</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/A4 Executive Spiral Notebook.png" alt="Spiral Notebook">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">A4 Executive Spiral Notebook (3-in-1)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 12,000</span>
+        </div>
+        <p class="arrival-desc">Divided into 3 sections for 3 different course units. Features tear-out pages for easy assignment submission.</p>
+        <ul class="arrival-props">
+            <li>300 Ruled pages</li>
+            <li>Heavy-duty spiral</li>
+            <li>In-built pocket folder</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Pastel Highlighters.png" alt="Highlighters">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Pastel Highlighters (Pack of 6)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 15,000</span>
+        </div>
+        <p class="arrival-desc">Make your revision notes pop. These soft colors are easy on the eyes during long night reading sessions.</p>
+        <ul class="arrival-props">
+            <li>Smudge-proof ink</li>
+            <li>Chisel tip for precision</li>
+            <li>Non-toxic material</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Mathematical Graph Book.png" alt="Graph Book">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Mathematical Graph Book (48 Pages)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 3,500</span>
+        </div>
+        <p class="arrival-desc">Perfect for plotting data in Statistics or Economics. High-quality grids that don't bleed through.</p>
+        <ul class="arrival-props">
+            <li>Standard 2mm grid</li>
+            <li>Clear printing</li>
+            <li>Budget-friendly</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Oxford Mathematical Set.png" alt="Geometry Set">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Oxford Mathematical Set (Original)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 18,000</span>
+        </div>
+        <p class="arrival-desc">Don't get stranded in an exam. The original set with all measuring tools needed for technical drawing.</p>
+        <ul class="arrival-props">
+            <li>Tin storage box</li>
+            <li>Accurate markings</li>
+            <li>Includes stencil and compass</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Colorful Sticky Notes.png" alt="Sticky Notes">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Colorful Sticky Notes (400 Sheets)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 10,000</span>
+        </div>
+        <p class="arrival-desc">Tag important pages in your textbooks or leave reminders on your hostel wall. Strong adhesive.</p>
+        <ul class="arrival-props">
+            <li>4 Fluorescent colors</li>
+            <li>Re-stickable</li>
+            <li>76mm x 76mm size</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Kangaro Mini Stapler with Pins.png" alt="Mini Stapler">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Kangaro Mini Stapler with Pins</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 6,500</span>
+        </div>
+        <p class="arrival-desc">Keep your handouts together. Small enough to fit in your laptop bag for emergency on-campus use.</p>
+        <ul class="arrival-props">
+            <li>Staples up to 15 sheets</li>
+            <li>Includes box of pins</li>
+            <li>Built-in staple remover</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Staedtler Drawing Pencils.png" alt="Pencils">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Staedtler Drawing Pencils (Set of 12)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 25,000</span>
+        </div>
+        <p class="arrival-desc">Essential for Industrial Art students. Includes grades from 2B to 6B for professional shading.</p>
+        <ul class="arrival-props">
+            <li>Break-resistant lead</li>
+            <li>Classic hexagonal shape</li>
+            <li>Easy to erase</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Transparent Document Folders.png" alt="Folders">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Transparent Document Folders (Pack of 5)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 7,500</span>
+        </div>
+        <p class="arrival-desc">Protect your admission letters and certificates from moisture and dirt while carrying them around campus.</p>
+        <ul class="arrival-props">
+            <li>Water-resistant PVC</li>
+            <li>Snap button closure</li>
+            <li>A4 Size compatible</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Deli Correction Tape.png" alt="Correction Tape">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Deli Correction Tape (5m)</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 4,500</span>
+        </div>
+        <p class="arrival-desc">Fix writing errors instantly. No waiting for liquid to dry, just roll over and keep writing.</p>
+        <ul class="arrival-props">
+            <li>Smooth application</li>
+            <li>No messy liquids</li>
+            <li>Ergonomic design</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+<div class="arrival-card">
+    <div class="arrival-image">
+        <img src="images/Textbooks/Hard Plastic Exam Clipboard.png" alt="Exam Board">
+    </div>
+    <div class="arrival-info">
+        <h3 class="arrival-name">Hard Plastic Exam Clipboard</h3>
+        <div class="arrival-pricing">
+            <span class="arrival-price">UGX 9,000</span>
+        </div>
+        <p class="arrival-desc">Ideal for students whose lecture rooms don't have stable desks. Sturdy and provides a flat writing surface.</p>
+        <ul class="arrival-props">
+            <li>Stainless steel clip</li>
+            <li>Smooth surface</li>
+            <li>Fits A4 paper</li>
+        </ul>
+        <div class="arrival-actions">
+            <button class="arrival-btn-filled" onclick="addToCart(this)">Add to Cart</button>
+            <button class="arrival-btn-outline">Details</button>
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+<!-- Pagination -->
+ <div class="pagination-section">
+    <div class="pagination-container">
+        <!-- Previous -->
+        <a href="category/flash_deals.html" class="pagination-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </a>
+
+        <!-- Page Numbers -->
+        <a href="products.html" class="pagination-link">1</a>
+        <a href="category/flash_deals.html" class="pagination-link">2</a>
+        <a href="category/textbook_stationary.html" class="pagination-link active">3</a>
+        <a href="category/tech_gadgets .html" class="pagination-link">4</a>
+        <a href="category/personal_care.html" class="pagination-link ">5</a>
+        <a href="category/campus_wear.html" class="pagination-link">6</a>
+        <a href="category/printing_services.html" class="pagination-link">7</a>
+        <a href="category/room_essentials.html" class="pagination-link ">8</a>
+        <a href="category/snacks_groceries.html" class="pagination-link ">9</a>
+
+        <!-- Next -->
+        <a href="category/tech_gadgets .html" class="pagination-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </a>
+    </div>
+</div>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+                <div class="footer-sections footer-section-1">
+                <div class="logo">
+                <h1 class="logo-head">UniEssentials</h1>
+                <p class="logo-text">Campus life, sorted</p>
+            </div>
+            </div>
+            <div class="footer-sections footer-section-2">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="index.html" class="link">Home</a></li>
+                    <li class="nav-link footer-nav-link"><a href="about.html" class="link">About</a></li>
+                    <li class="nav-link footer-nav-link"><a href="cart.html" class="link home-cart-link">Cart</a></li>
+                    <li class="nav-link footer-nav-link"><a href="products.html" class="link">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">Quick Links</h3>
+                <ul class="footer-links">
+                    <li class="nav-link footer-nav-link"><a href="contact.html" class="link">Contact Us</a></li>
+                    <li class="nav-link footer-nav-link"><a href="register.html" class="link">Register</a></li>
+                    <li class="nav-link footer-nav-link"><a href="login.html" class="link">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                    <h3 class="quick-links">News Letter</h3>
+                <center>
+                    <form action="" class="newsletter-form">
+                    <input type="email" required placeholder="kasaggafred@gmail.com" class="newsletter">
+                    <button type="submit" class="nav-button-link unfilled buttons-design">Subscribe to our News Letter</button>
+                </form>
+                </center>
+
+            </div>
+        </div>
+        <p class="footer-tagline">&copy; <span id="year"></span> UniEssentials</p>
+    </footer>
+
+
+
+
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

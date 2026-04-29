@@ -1,0 +1,116 @@
+.cart-main {
+    background-color: var(--color-white);
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: sans-serif;
+}
+
+.cart-container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.cart-heading {
+    margin-bottom: 30px;
+    color: var(--color-black);
+}
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 30px;
+}
+
+/* Individual Item Styling */
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--shadow-grey-light);
+}
+
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: white;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.cart-item-info { flex: 1; }
+.cart-item-info h4 { margin: 0 0 5px 0; color: var(--color-black); }
+.cart-item-info p { color: var(--color-red); font-weight: bold; margin: 0; }
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-qty-input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid var(--shadow-grey-light);
+    border-radius: 4px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: var(--shadow-grey-dark);
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.remove-btn:hover { color: var(--color-red); }
+
+/* Summary Box Styling */
+.cart-summary {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 8px;
+    height: fit-content;
+    border: 1px solid var(--shadow-grey-light);
+    position: sticky;
+    top: 100px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.free-text { color: var(--color-green); font-weight: bold; }
+
+.checkout-btn {
+    width: 100%;
+    background: var(--color-blue);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.continue-shopping {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--color-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+    .cart-layout { grid-template-columns: 1fr; }
+    .cart-summary { position: static; }
+}

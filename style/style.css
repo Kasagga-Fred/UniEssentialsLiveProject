@@ -1,0 +1,15 @@
+:root{
+    --color-red: red;
+    --color-blue: blue;
+    --color-white: white;
+    --color-black: black;
+    --color-orange: #ffa500;
+    --color-green: #27a344;
+    --card: #f8f9fa;
+    --shadow-grey-dark: #6c757d;
+    --shadow-grey-light: #adb5bd;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
